@@ -8,3 +8,5 @@ class WebDriver:
 
     def refresh(self):
         self.driver.refresh()
+
+

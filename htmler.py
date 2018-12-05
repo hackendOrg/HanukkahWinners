@@ -19,11 +19,11 @@ def print_to_html(score_board, html_path):
                    "<br>\n" + \
                    "<table style=\"width:75%;\" align=\"center\" bgcolor=\"#FFFFCC\">\n" + \
                    "<tr>\n" + \
-                   "<th>Name Group</th>\n" + \
+                   "<th>Name</th>\n" + \
                    "<th>Score</th>\n" + \
                    "</tr>\n"
-    for name in score_board.keys():
-        html_content += "<tr><td>" + name + "</td><td>" + str(score_board[name]) + "</td></tr>"
+    for pair in score_board:
+        html_content += "<tr><td>" + pair[0] + "</td><td>" + str(pair[1]) + "</td></tr>"
     html_content += "</table>\n" + \
                     "</body>\n" + \
                     "</html>\n"

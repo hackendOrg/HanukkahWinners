@@ -12,7 +12,7 @@ score_board = ScoreBoard()
 
 @app.route('/', methods=['POST'])
 def result():
-    score_board.add(request.form['name'], request.form['score'])
+    score_board.add(request.form['name'], int(request.form['score']))
     return 'Received !'  # response to your request.
 
 
